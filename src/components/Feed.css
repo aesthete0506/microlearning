@@ -3,10 +3,12 @@
   margin-top: 60px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+  will-change: scroll-position;
 }
 
 .feed-container::-webkit-scrollbar {
@@ -18,6 +20,9 @@
   width: 100%;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .feed-empty {

@@ -9,6 +9,10 @@
   scroll-snap-align: start;
   scroll-snap-stop: always;
   overflow: hidden;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .card-background {
@@ -42,32 +46,39 @@
   padding: 24px;
   max-width: 400px;
   text-align: center;
-  animation: fadeInUp 0.6s ease-out;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.content-card.active .card-content {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition-delay: 0.1s;
 }
 
 .card-emoji {
   font-size: 64px;
   margin-bottom: 16px;
-  animation: bounce 2s ease-in-out infinite;
+  opacity: 0;
+  transform: scale(0.5) translateY(20px);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@keyframes bounce {
+.content-card.active .card-emoji {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  animation: gentleBounce 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes gentleBounce {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-8px) scale(1.02);
   }
 }
 
@@ -78,6 +89,15 @@
   color: white;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   line-height: 1.2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.content-card.active .card-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
 }
 
 .card-text {
@@ -86,6 +106,15 @@
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 20px;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.content-card.active .card-text {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
 }
 
 .card-tips {
@@ -95,6 +124,15 @@
   padding: 16px;
   margin-top: 16px;
   text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.content-card.active .card-tips {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
 }
 
 .tips-header {
@@ -136,6 +174,15 @@
   margin-top: 16px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.content-card.active .card-fact {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
 }
 
 .fact-icon {
@@ -164,18 +211,30 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-size: 22px;
   justify-content: center;
+  opacity: 0;
+  transform: translateX(30px);
 }
+
+.content-card.active .action-btn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content-card.active .action-btn:nth-child(1) { transition-delay: 0.3s; }
+.content-card.active .action-btn:nth-child(2) { transition-delay: 0.4s; }
+.content-card.active .action-btn:nth-child(3) { transition-delay: 0.5s; }
 
 .action-btn:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .action-btn:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
 }
 
 .action-label {
