@@ -19,6 +19,13 @@ export const contentData: ContentCard[] = [
     emoji: '🤖',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     tips: ['Start with supervised learning', 'Python is the go-to language', 'Kaggle has great datasets'],
+    sponsoredCard: {
+      brand: 'Coursera',
+      tagline: 'Learn ML from Stanford professors',
+      emoji: '🎓',
+      cta: 'Start Free Trial',
+      color: '#0056D2'
+    }
   },
   {
     id: 'ai-2',
@@ -28,6 +35,13 @@ export const contentData: ContentCard[] = [
     emoji: '🧠',
     gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
     fact: 'GPT-4 has over 1 trillion parameters!',
+    sponsoredCard: {
+      brand: 'NVIDIA',
+      tagline: 'Power your AI with RTX GPUs',
+      emoji: '💚',
+      cta: 'Explore GPUs',
+      color: '#76B900'
+    }
   },
   {
     id: 'ai-3',
@@ -37,6 +51,13 @@ export const contentData: ContentCard[] = [
     emoji: '✨',
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     tips: ['Be specific and clear', 'Give examples', 'Use system prompts wisely'],
+    sponsoredCard: {
+      brand: 'ChatGPT Plus',
+      tagline: 'Unlock GPT-4 & advanced features',
+      emoji: '🚀',
+      cta: 'Upgrade Now',
+      color: '#10A37F'
+    }
   },
   {
     id: 'ai-4',
@@ -45,6 +66,13 @@ export const contentData: ContentCard[] = [
     domain: 'ai',
     emoji: '⚖️',
     gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+    sponsoredCard: {
+      brand: 'AI Safety Institute',
+      tagline: 'Building responsible AI together',
+      emoji: '🛡️',
+      cta: 'Learn More',
+      color: '#6366F1'
+    }
   },
   
   // Finance
@@ -56,6 +84,13 @@ export const contentData: ContentCard[] = [
     emoji: '📈',
     gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
     fact: 'Starting 10 years earlier can double your retirement savings!',
+    sponsoredCard: {
+      brand: 'Wealthfront',
+      tagline: 'Automated investing made simple',
+      emoji: '💰',
+      cta: 'Get $50 Bonus',
+      color: '#472EC8'
+    }
   },
   {
     id: 'finance-2',
@@ -65,6 +100,13 @@ export const contentData: ContentCard[] = [
     emoji: '💵',
     gradient: 'linear-gradient(135deg, #96fbc4 0%, #f9f586 100%)',
     tips: ['Track expenses for a month first', 'Automate your savings', 'Review quarterly'],
+    sponsoredCard: {
+      brand: 'Mint by Intuit',
+      tagline: 'Track spending & budgets for free',
+      emoji: '📱',
+      cta: 'Download Free',
+      color: '#00A86B'
+    }
   },
   {
     id: 'finance-3',
@@ -73,6 +115,13 @@ export const contentData: ContentCard[] = [
     domain: 'finance',
     emoji: '🛡️',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    sponsoredCard: {
+      brand: 'Marcus by Goldman Sachs',
+      tagline: '4.5% APY High-Yield Savings',
+      emoji: '🏦',
+      cta: 'Open Account',
+      color: '#00205B'
+    }
   },
   {
     id: 'finance-4',
@@ -82,6 +131,13 @@ export const contentData: ContentCard[] = [
     emoji: '📊',
     gradient: 'linear-gradient(135deg, #f5af19 0%, #f12711 100%)',
     fact: 'Warren Buffett recommends index funds for most investors',
+    sponsoredCard: {
+      brand: 'Vanguard',
+      tagline: 'Low-cost index funds since 1976',
+      emoji: '🚀',
+      cta: 'Start Investing',
+      color: '#C8102E'
+    }
   },
   
   // Health
@@ -93,6 +149,13 @@ export const contentData: ContentCard[] = [
     emoji: '😴',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     tips: ['Keep a consistent schedule', 'Avoid screens before bed', 'Keep room cool and dark'],
+    sponsoredCard: {
+      brand: 'Calm',
+      tagline: 'Sleep stories & meditation for better rest',
+      emoji: '🌙',
+      cta: 'Try 7 Days Free',
+      color: '#4A90D9'
+    }
   },
   {
     id: 'health-2',
@@ -102,6 +165,13 @@ export const contentData: ContentCard[] = [
     emoji: '💧',
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     fact: 'Even 2% dehydration can impair cognitive performance',
+    sponsoredCard: {
+      brand: 'Liquid I.V.',
+      tagline: '3x faster hydration than water alone',
+      emoji: '⚡',
+      cta: 'Shop Now',
+      color: '#FF6B35'
+    }
   },
   {
     id: 'health-3',
@@ -110,6 +180,13 @@ export const contentData: ContentCard[] = [
     domain: 'health',
     emoji: '🚶',
     gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+    sponsoredCard: {
+      brand: 'Apple Watch',
+      tagline: 'Close your rings. Every day counts.',
+      emoji: '⌚',
+      cta: 'Learn More',
+      color: '#000000'
+    }
   },
   {
     id: 'health-4',
@@ -118,6 +195,13 @@ export const contentData: ContentCard[] = [
     domain: 'health',
     emoji: '🦠',
     gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
+    sponsoredCard: {
+      brand: 'Athletic Greens (AG1)',
+      tagline: '75 vitamins & minerals in one scoop',
+      emoji: '🥬',
+      cta: 'Get Free Supply',
+      color: '#2D5016'
+    }
   },
   
   // Productivity
@@ -128,6 +212,13 @@ export const contentData: ContentCard[] = [
     domain: 'productivity',
     emoji: '⏱️',
     gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+    sponsoredCard: {
+      brand: 'Todoist',
+      tagline: 'Organize your life in seconds',
+      emoji: '✅',
+      cta: 'Try Pro Free',
+      color: '#E44332'
+    }
   },
   {
     id: 'productivity-2',
@@ -137,14 +228,28 @@ export const contentData: ContentCard[] = [
     emoji: '🎯',
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     tips: ['Start with 90-minute blocks', 'Use website blockers', 'Protect your peak hours'],
+    sponsoredCard: {
+      brand: 'Freedom',
+      tagline: 'Block distracting sites & apps',
+      emoji: '🔒',
+      cta: 'Get 20% Off',
+      color: '#1DA1F2'
+    }
   },
   {
     id: 'productivity-3',
-    title: 'Eat the Frog First',
-    content: 'Do your hardest task first thing in the morning when willpower is highest. Everything else feels easier after.',
+    title: 'Eat the Frog First 🐸',
+    content: 'Do your hardest task first thing in the morning when willpower is highest. Pair it with a strong coffee! Everything else feels easier after.',
     domain: 'productivity',
     emoji: '🐸',
     gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
+    sponsoredCard: {
+      brand: 'Starbucks',
+      tagline: 'Fuel your morning focus ☕',
+      emoji: '☕',
+      cta: 'Order Ahead',
+      color: '#00704A'
+    }
   },
   {
     id: 'productivity-4',
@@ -153,6 +258,13 @@ export const contentData: ContentCard[] = [
     domain: 'productivity',
     emoji: '🍅',
     gradient: 'linear-gradient(135deg, #eb3349 0%, #f45c43 100%)',
+    sponsoredCard: {
+      brand: 'Forest App',
+      tagline: 'Stay focused, plant real trees 🌲',
+      emoji: '🌱',
+      cta: 'Download Now',
+      color: '#4CAF50'
+    }
   },
   
   // Psychology
@@ -163,6 +275,13 @@ export const contentData: ContentCard[] = [
     domain: 'psychology',
     emoji: '🔮',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    sponsoredCard: {
+      brand: 'Blinkist',
+      tagline: 'Key insights from psychology books in 15 min',
+      emoji: '📚',
+      cta: '7-Day Free Trial',
+      color: '#0365A2'
+    }
   },
   {
     id: 'psychology-2',
@@ -172,14 +291,28 @@ export const contentData: ContentCard[] = [
     emoji: '🌱',
     gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
     fact: 'Students taught growth mindset show improved grades',
+    sponsoredCard: {
+      brand: 'MasterClass',
+      tagline: 'Learn from the world\'s best minds',
+      emoji: '🎬',
+      cta: 'Start Learning',
+      color: '#000000'
+    }
   },
   {
     id: 'psychology-3',
     title: 'Dopamine & Motivation',
-    content: 'Dopamine drives motivation, not pleasure. It\'s released in anticipation of reward. Use this: break big goals into small wins.',
+    content: 'Dopamine drives motivation, not pleasure. It\'s released in anticipation of reward. Use this: break big goals into small wins. A little caffeine boost helps too!',
     domain: 'psychology',
     emoji: '⚡',
     gradient: 'linear-gradient(135deg, #f5af19 0%, #f12711 100%)',
+    sponsoredCard: {
+      brand: 'Nespresso',
+      tagline: 'The perfect morning motivation ritual',
+      emoji: '☕',
+      cta: 'Shop Machines',
+      color: '#000000'
+    }
   },
   {
     id: 'psychology-4',
@@ -188,6 +321,13 @@ export const contentData: ContentCard[] = [
     domain: 'psychology',
     emoji: '🧩',
     gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+    sponsoredCard: {
+      brand: 'Notion',
+      tagline: 'Your all-in-one workspace for notes & tasks',
+      emoji: '📝',
+      cta: 'Get Started Free',
+      color: '#000000'
+    }
   },
   
   // Science
@@ -198,6 +338,13 @@ export const contentData: ContentCard[] = [
     domain: 'science',
     emoji: '⚛️',
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+    sponsoredCard: {
+      brand: 'IBM Quantum',
+      tagline: 'Experience quantum computing today',
+      emoji: '🔬',
+      cta: 'Try Free',
+      color: '#0F62FE'
+    }
   },
   {
     id: 'science-2',
@@ -207,6 +354,13 @@ export const contentData: ContentCard[] = [
     emoji: '🧬',
     gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
     fact: 'CRISPR was discovered from bacterial immune systems',
+    sponsoredCard: {
+      brand: '23andMe',
+      tagline: 'Discover your DNA story',
+      emoji: '🔍',
+      cta: 'Get 40% Off Kit',
+      color: '#A61890'
+    }
   },
   {
     id: 'science-3',
@@ -215,6 +369,13 @@ export const contentData: ContentCard[] = [
     domain: 'science',
     emoji: '🌌',
     gradient: 'linear-gradient(135deg, #0c0c1e 0%, #1a1a3e 100%)',
+    sponsoredCard: {
+      brand: 'NASA',
+      tagline: 'Explore the cosmos with us',
+      emoji: '🚀',
+      cta: 'Watch Live',
+      color: '#0B3D91'
+    }
   },
   {
     id: 'science-4',
@@ -223,6 +384,13 @@ export const contentData: ContentCard[] = [
     domain: 'science',
     emoji: '🧠',
     gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+    sponsoredCard: {
+      brand: 'Duolingo',
+      tagline: 'Learn a new language & rewire your brain',
+      emoji: '🦉',
+      cta: 'Start Free',
+      color: '#58CC02'
+    }
   },
 ];
 

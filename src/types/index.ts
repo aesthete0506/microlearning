@@ -7,6 +7,13 @@ export interface ContentCard {
   gradient: string;
   tips?: string[];
   fact?: string;
+  sponsoredCard?: {
+    brand: string;
+    tagline: string;
+    emoji: string;
+    cta: string;
+    color: string;
+  };
 }
 
 export type Domain = 'ai' | 'finance' | 'health' | 'productivity' | 'psychology' | 'science';

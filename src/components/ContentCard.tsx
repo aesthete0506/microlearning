@@ -38,6 +38,26 @@ export function ContentCard({ card, isActive }: ContentCardProps) {
           </div>
         )}
       </div>
+
+      {/* Sponsored Card */}
+      {card.sponsoredCard && (
+        <div 
+          className="sponsored-card"
+          style={{ '--sponsor-color': card.sponsoredCard.color } as React.CSSProperties}
+        >
+          <div className="sponsored-badge">Sponsored</div>
+          <div className="sponsored-content">
+            <span className="sponsored-emoji">{card.sponsoredCard.emoji}</span>
+            <div className="sponsored-info">
+              <div className="sponsored-brand">{card.sponsoredCard.brand}</div>
+              <div className="sponsored-tagline">{card.sponsoredCard.tagline}</div>
+            </div>
+          </div>
+          <button className="sponsored-cta">
+            {card.sponsoredCard.cta}
+          </button>
+        </div>
+      )}
       
       <div className="card-actions">
         <button className="action-btn">
